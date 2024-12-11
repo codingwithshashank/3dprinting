@@ -1,0 +1,30 @@
+/* About.css */
+.about-page {
+    padding: 20px;
+    text-align: center;
+    background-color: #111; /* Black background */
+    color: rgb(58, 223, 209); /* Teal text */
+    width: 100vw; /* 100% of viewport width */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Ensure padding doesn't add to width */
+
+    background-image: url('/p1.jpg'); /* Path to the image in the public folder */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center; /* Center the image */
+  }
+  
+  .about-title {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-description {
+    font-size: 2rem;
+    line-height: 1.6;
+  }
+  

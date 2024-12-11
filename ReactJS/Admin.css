@@ -1,0 +1,87 @@
+.admin-page {
+    padding: 20px;
+    overflow-y: auto; /* This enables vertical scrolling */
+    max-height: 80vh; /* Limit the height of the page section to fit within the screen */
+
+    background-image: url('/p3.jpeg'); /* Path to the image in the public folder */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center; /* Center the image */
+  
+    width: 100vw; /* Full width */
+  }
+  
+
+  .admin-header {
+    background-color: #f8f9fa; /* Light background for header */
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    /* position: sticky; top: 0; style makes the admin title stay fixed at the top of the */
+    z-index: 10; /* ensures the title stays above the content. */
+  }
+
+  .admin-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .file-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex: 1; /* Make the file list take up the remaining space */
+    overflow-y: auto; /* allows vertical scrolling if the file list exceeds the viewport height. */
+
+  }
+  
+  .file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 15px 100px;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .file-name {
+    font-size: 18px;
+    flex: 1;
+    /* Flexbox is used to align the file name and buttons in a row. The flex: 1; 
+    property for the file name ensures it takes up all available space, 
+    pushing the buttons to the right. */
+  }
+  
+  .file-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .download-btn,
+  .delete-btn {
+    padding: 12px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .download-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .download-btn:hover,
+  .delete-btn:hover {
+    opacity: 0.8;
+  }
+  
